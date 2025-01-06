@@ -1,52 +1,51 @@
-# Тестовое задание для стажёра Frontend
+# Test Assignment for Frontend Intern
 
-Разработать интерфейс для сайта [Free-To-Play Games](https://www.freetogame.com/), состоящий из двух страниц.
+Develop an interface for the [Free-To-Play Games](https://www.freetogame.com/) website, consisting of two pages.
 
-## Продуктовые требования
-### Главная страница
-- Показывает игры
-    - Игры можно отфильтровать по платформе и жанру (например, шутер)
-    - Игры можно отсортировать по дате релиза, популярности и тд
-- Каждая игра в списке содержит:
-	- название
-	- дата релиза (в российском формате)
-    - издатель
-    - жанр
-    - картинка
-- По клику на игру происходит переход на страницу игры
-- На загрузку игр показывать индикатор загрузки
-- Если не получилось получить данные, необходимо сообщить пользователю
-### Страница игры
-- Должна содержать (в любом порядке/виде):	
-	- название
-	- дата релиза (в российском формате)
-    - издатель
-    - разработчик
-    - жанр
-    - картинка/постер
-    - карусель скриншотов
-    - системные требования
-- На странице должна быть кнопка для возврата к списку игр
-- На загрузку игры показывать индикатор загрузки
-- Если не получилось получить данные, необходимо сообщить пользователю
+## Product Requirements
+### Main Page
+- Displays games
+    - Games can be filtered by platform and genre (e.g., shooter)
+    - Games can be sorted by release date, popularity, etc.
+- Each game in the list contains:
+    - title
+    - release date (in Russian format)
+    - publisher
+    - genre
+    - image
+- Clicking on a game navigates to the game page
+- Show a loading indicator while games are loading
+- If data cannot be retrieved, notify the user
+### Game Page
+- Should contain (in any order/format):
+    - title
+    - release date (in Russian format)
+    - publisher
+    - developer
+    - genre
+    - image/poster
+    - screenshot carousel
+    - system requirements
+- The page should have a button to return to the game list
+- Show a loading indicator while the game is loading
+- If data cannot be retrieved, notify the user
 
-## Технические требования
+## Technical Requirements
 
-- С приложением должно быть удобно работать, как с мобильного экрана, так и с десктопа (адаптивный интерфейс)
-- Приложение разработано с помощью React 18+ и Redux / Redux Toolkit
-- Использован [Free-To-Play Games API](https://www.freetogame.com/api-doc) (не важно с или без CORS). Вызовы API и обработка данных от него производятся напрямую с фронтенда (кроме случая, если вы сделаете опциональное задание про Node.JS).
-- Роутинг выполнен с использованием [React Router v6](https://reactrouter.com/en/main)
-- Фреймворк UI любой на ваше усмотрение (например, [Ant Design](https://ant.design/), [Semantic UI](https://react.semantic-ui.com/), [Element UI](http://elemental-ui.com/))
-- Пакетный менеджер `npm`
-- Приложение должно запускаться по адресу `localhost:3001` командой `npm start`
-- При переходах по ссылкам страница не перезагружается
-- Если карточка игры была открыта, то она должна быть доступна при последующих открытиях (перезагрузках) страницы без дополнительного запроса в течение 5 минут
-- Исходный код решения должен быть выложен с вашего аккаунта на [Github](http://github.com/)
+- The application should be convenient to use on both mobile and desktop screens (responsive interface)
+- The application is developed using React 18+ and Redux / Redux Toolkit
+- Use the [Free-To-Play Games API](https://www.freetogame.com/api-doc) (with or without CORS). API calls and data processing are done directly from the frontend (except for the optional Node.JS task).
+- Routing is done using [React Router v6](https://reactrouter.com/en/main)
+- Any UI framework of your choice (e.g., [Ant Design](https://ant.design/), [Semantic UI](https://react.semantic-ui.com/), [Element UI](http://elemental-ui.com/))
+- Package manager `npm`
+- The application should run at `localhost:3001` with the command `npm start`
+- Page transitions should not reload the page
+- If a game card was opened, it should be available on subsequent page reloads without an additional request for 5 minutes
 
-## Опциональные задания
-- Использование TypeScript
-- Учитывать, что список игр может содержать тысячи тайтлов
-- При неудачном запросе должно быть три попытки повторного запроса
-- При переходе со страницы на страницу запросы, относящиеся к старой странице, должны прерываться (отменяться/прекращаться)
-- Бэкенд для хостинга статики и API для инкапсуляции внешних запросов на Node.JS
-- Покрытие кода юнит-тестами
+## Optional Tasks
+- Use TypeScript
+- Consider that the game list may contain thousands of titles
+- On a failed request, there should be three retry attempts
+- When navigating from page to page, requests related to the old page should be aborted (canceled/stopped)
+- Backend for hosting static files and API encapsulation of external requests on Node.JS
+- Code coverage with unit tests

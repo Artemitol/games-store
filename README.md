@@ -1,9 +1,9 @@
-# Это репозиторий пет проекта для игр
+# This is a repository for a pet project games
 
-## О проекте
+## About the project
 
-## Установка и запуск
+## Installation and launch
 
-## Технические требования
+## Technical requirements
 
-Задание было взято из списка тестовых заданий на стажировку в avito.tech, [текст задания](./task.md)
+The task was taken from the list of test tasks for an internship at avito.tech, [task text](./task.md)
