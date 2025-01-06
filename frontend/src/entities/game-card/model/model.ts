@@ -26,7 +26,7 @@ export const GameCardDTOschema = z.object({
 export type GameCardModel = z.infer<typeof GameCardDTOschema>
 
 export const defaultGameCardValue: GameCardModel = {
-    id: 0,
+    id: "0",
     title: "",
     freetogame_profile_url: "",
     genre: "",
