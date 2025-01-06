@@ -1,4 +1,5 @@
-@use "@scss/_mixins";
+@use "./mixins" as *;
+@use "./media" as *;
 
 .hidden {
     @include hidden;
