@@ -1,7 +1,6 @@
-type Props = {
-    children?: React.ReactNode
-}
+import classes from "./main.module.scss"
+import { ReactNode } from "react"
 
-export function Main(props: Props) {
-    return <div>{props.children}</div>
+export function Main({ children }: { children: ReactNode }) {
+    return <div className={classes.main}>{children}</div>
 }

@@ -4,7 +4,9 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite",
+        "dev": "npx vite",
+        "server": "npx json-server db.json",
+        "app": "concurrently \"npm run server\" \"npm run dev\"",
         "build": "tsc && vite build",
         "lint": "npx eslint .",
         "lint:auto-fix": "npx eslint src --fix",
@@ -12,9 +14,11 @@
     },
     "dependencies": {
         "@react-aria/visually-hidden": "3.8.12",
+        "@reduxjs/toolkit": "^2.5.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
-        "react-router-dom": "6.23.0"
+        "react-router-dom": "6.23.0",
+        "zod": "^3.24.1"
     },
     "devDependencies": {
         "@conarti/eslint-plugin-feature-sliced": "^1.0.5",
@@ -27,6 +31,7 @@
         "@vitejs/plugin-react": "^4.2.1",
         "autoprefixer": "10.4.19",
         "clsx": "^2.1.1",
+        "concurrently": "^9.1.2",
         "eslint": "^8.57.0",
         "eslint-config-prettier": "9.1.0",
         "eslint-plugin-css": "^0.11.0",
@@ -38,8 +43,10 @@
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-unused-imports": "4.1.4",
         "framer-motion": "^11.11.17",
+        "json-server": "^1.0.0-beta.3",
         "postcss": "8.4.38",
         "prettier": "3.3.3",
+        "react-redux": "^9.2.0",
         "sass-embedded": "^1.81.0",
         "tailwind-variants": "^0.3.0",
         "tailwindcss": "^3.4.15",

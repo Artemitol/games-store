@@ -10,7 +10,7 @@ export function CardDropdown() {
     return (
         <Dropdown>
             <DropdownTrigger>
-                <Button isIconOnly></Button>
+                <Button isIconOnly size='sm'></Button>
             </DropdownTrigger>
             <DropdownMenu>
                 <DropdownItem>Добавить в избранное</DropdownItem>
