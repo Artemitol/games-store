@@ -43,6 +43,7 @@ export default [
             semi: ["error", "never"],
             "import/no-default-export": "error",
             "import/no-unresolved": "off",
+            "no-console": "error",
             "prettier/prettier": [
                 "warn",
                 {

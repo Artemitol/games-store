@@ -1,3 +1,5 @@
+@use "./media" as *;
+
 :root {
     // COLOR
     --color-background: #272b30;
@@ -33,13 +35,20 @@
 
     // DECORATIONS
     --border: 1px solid var(--color-main);
-    --box-shadow: 1 1 var(--color-dark);
+    --shadow-blur: 16px;
+    --shadow-color: hsla(0, 0%, 0%, 0.15);
+    --box-shadow: 0 8px var(--shadow-blur) var(--shadow-color);
     --border-radius: 4px;
 
     // ANIMATIONS
-    --transition-duration: 0.2s;
+    --transition-duration: 0.3s;
 
     // MEDIA
-    // @include tablet {  }
-    // @include mobile {  }
+    @include tablet {
+        --site-padding-x: 32px;
+    }
+
+    @include mobile {
+        --site-padding-x: 10px;
+    }
 }

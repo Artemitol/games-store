@@ -1,3 +1,4 @@
+import { GamePage } from "@pages/game-page"
 import { Layout } from "../layout"
 import { Spinner } from "@nextui-org/react"
 import { Homepage } from "@pages/home-page"
@@ -19,6 +20,17 @@ export const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Homepage />,
+            },
+            {
+                path: "/games/:id",
+                element: <GamePage />,
+                errorElement: (
+                    <Spinner
+                        label='Oups... Cant get game page'
+                        labelColor='danger'
+                        color='danger'
+                    />
+                ),
             },
         ],
     },

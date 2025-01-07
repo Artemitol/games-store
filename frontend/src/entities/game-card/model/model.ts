@@ -46,3 +46,5 @@ export const GamePageDTOschema = GameCardDTOschema.extend({
 
 // Creates TS type based on zod schema
 export type GamePageModel = z.infer<typeof GamePageDTOschema>
+
+export type StoredGamesModel = Record<number, GameCardModel>

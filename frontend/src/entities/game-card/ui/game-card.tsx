@@ -2,10 +2,18 @@ import classes from "./game-card.module.scss"
 import { Chip } from "@nextui-org/react"
 import { GameCardModel } from "../model/model"
 import { CardDropdown } from "./card-dropdown/card-dropdown"
+import { useNavigate } from "react-router-dom"
 
 export function GameCard({ game }: { game: GameCardModel }) {
+    const navigate = useNavigate()
+
     return (
-        <article className={classes.card}>
+        <article
+            className={classes.card}
+            onClick={() => {
+                navigate(`/games/${game.id}`)
+            }}
+        >
             <img
                 className={classes.image}
                 src={game.thumbnail}
