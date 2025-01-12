@@ -1,3 +1,4 @@
 eslint*
 .prettier*
 node_modules
+.git

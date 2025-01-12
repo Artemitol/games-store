@@ -17,11 +17,11 @@
         "@react-aria/visually-hidden": "3.8.12",
         "@reduxjs/toolkit": "^2.5.0",
         "host": "^0.0.1",
-        "npm": "^11.0.0",
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "react-router-dom": "6.23.0",
         "run": "^1.5.0",
+        "vim": "^0.1.0",
         "zod": "^3.24.1"
     },
     "devDependencies": {
